@@ -2,6 +2,10 @@
 // Then l stuck for 30 mins just because l placed DP[0]=true after filling the array
 // the last return statement could be 'return false' but either way
 
+//I just realized you could start from index 1
+//and (DP[d]=true) if (DP[i]>d-i);
+//Whatever. If it works, it works.
+
 import java.util.Arrays; 
 class Solution {
     public boolean canJump(int[] nums) {
